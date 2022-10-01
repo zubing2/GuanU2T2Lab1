@@ -35,7 +35,7 @@ public class Point {
     }
 
     public String coordinate() {
-        return ("(" + x + ")" + "(" + y + ")");
+        return ("(" + x + "," + y + ")");
     }
 
     public String quadrant() {
@@ -54,8 +54,19 @@ public class Point {
         if (x == 0 && y == 0) {
             return ("on the origin");
         }
-        if (x == 0 && y )
+        if (x == 0 && y > 0) {
+            if (y < 0) {
+                return ("on an axis");
+            }
+            return ("on an axis");
+        }if (y == 0 && x > 0) {
+            if (x < 0) {
+                return ("on an axis");
+            }
+            return ("on an axis");
         }
+            return ("on an axis");
     }
+}
 
 
